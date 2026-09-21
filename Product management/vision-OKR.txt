@@ -5,7 +5,6 @@ The solution should be different, useful, and unique from existing solutions.
 The vision should aim for a solution where the main problem is completely solved and fewer problems remain.
 
 
-
 2. The Strategy
 Strategy means how we will achieve our vision.
 It identifies the key areas where we need to work.
