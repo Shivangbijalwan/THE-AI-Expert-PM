@@ -1,0 +1,179 @@
+FINANCIAL MODELING
+================================
+
+1. WHAT IS FINANCIAL MODELING?
+------------------------------
+
+Financial modeling means creating a financial plan using
+numbers, formulas, and assumptions, usually in Excel.
+
+It helps us understand:
+
+- Revenue
+- Expenses
+- Profit
+- Cash flow
+- Future performance
+- Business value
+
+
+2. 5-STEP FRAMEWORK
+-------------------
+
+1. Collect Data
+   → Collect sales, expenses, costs, loans, etc.
+
+2. Make Assumptions
+   → Estimate future sales, costs, growth, tax, etc.
+
+3. Build the Model
+   → Connect data using Excel formulas.
+
+4. Analyze Results
+   → Check profit, cash flow, growth, and risks.
+
+5. Make Decisions
+   → Use the results for business decisions.
+
+
+3. TYPES OF FINANCIAL MODELS
+----------------------------
+
+1. 3-Statement Model
+   → Income Statement + Balance Sheet + Cash Flow.
+
+2. Budget Model
+   → Plans future income and expenses.
+
+3. Forecasting Model
+   → Predicts future financial performance.
+
+4. DCF Model
+   → Estimates the value of a business using future cash flows.
+
+5. Valuation Model
+   → Estimates how much a company is worth.
+
+6. M&A Model
+   → Used for mergers and acquisitions.
+
+7. LBO Model
+   → Used to analyze a company bought mainly with borrowed money.
+
+8. Startup Model
+   → Plans revenue, costs, funding, cash burn, and growth.
+
+
+4. HOW DOES A MODEL WORK?
+-------------------------
+
+INPUTS
+  ↓
+ASSUMPTIONS
+  ↓
+FORMULAS
+  ↓
+FINANCIAL RESULTS
+  ↓
+ANALYSIS
+  ↓
+DECISION
+
+
+Example:
+
+Customers = 1,000
+Price = ₹500
+
+Revenue = 1,000 × ₹500
+        = ₹5,00,000
+
+Expenses = ₹3,00,000
+
+Profit = ₹5,00,000 - ₹3,00,000
+       = ₹2,00,000
+
+
+5. IMPORTANT CONCEPTS
+---------------------
+
+Revenue       = Money earned
+Expenses      = Money spent
+Profit        = Revenue - Expenses
+Assets        = What company owns
+Liabilities   = What company owes
+Equity        = Owner's/shareholder's value
+Debt          = Borrowed money
+Cash Flow     = Money coming in and going out
+EBITDA        = Operating earnings before certain expenses
+
+
+6. IMPORTANT ANALYSIS
+---------------------
+
+Scenario Analysis
+→ Best case, Base case, Worst case.
+
+Sensitivity Analysis
+→ See what happens when one number changes.
+
+Example:
+If sales increase → Revenue and profit may increase.
+
+
+7. TOOLS USED
+-------------
+
+Main tool:
+
+- Microsoft Excel
+
+Useful Excel skills:
+
+- SUM
+- IF
+- XLOOKUP
+- SUMIFS
+- Pivot Tables
+- Charts
+- Data Tables
+
+
+8. CAREER OPTIONS
+-----------------
+
+Financial Analyst
+FP&A Analyst
+Business Analyst
+Investment Banking Analyst
+Valuation Analyst
+Equity Research Analyst
+Corporate Finance Analyst
+
+
+9. LEARNING ORDER
+-----------------
+
+Accounting Basics
+      ↓
+Excel
+      ↓
+Financial Statements
+      ↓
+Financial Ratios
+      ↓
+Forecasting
+      ↓
+3-Statement Model
+      ↓
+DCF & Valuation
+      ↓
+Scenario/Sensitivity Analysis
+      ↓
+Real Projects
+
+
+ONE-LINE DEFINITION:
+
+Financial Modeling = Using numbers, assumptions, and formulas
+to understand a business and predict its future financial performance.
