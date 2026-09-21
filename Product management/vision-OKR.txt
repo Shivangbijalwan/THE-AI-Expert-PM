@@ -1,0 +1,33 @@
+1. The Vision
+Vision means what we want to achieve in the future.
+It focuses on solving a real-life problem.
+The solution should be different, useful, and unique from existing solutions.
+The vision should aim for a solution where the main problem is completely solved and fewer problems remain.
+
+
+
+2. The Strategy
+Strategy means how we will achieve our vision.
+It identifies the key areas where we need to work.
+It helps us make a proper plan to achieve success.
+A good strategy makes the goal clear, practical, and achievable.
+
+
+
+3. The Roadmap
+A roadmap is the step-by-step path to achieve something.
+It explains what needs to be done to complete the vision.
+It breaks a big goal into smaller and manageable steps.
+It provides a clear pattern or direction to follow.
+
+
+
+4. The OKRs
+OKR = Objectives and Key Results
+OKRs define what goals need to be achieved.
+They help align the team's objectives with the overall business goals.
+OKRs clarify what the team wants to achieve and how success will be measured.
+They help the team review progress and make adjustments when needed.
+OKRs are mainly about focus and priorities, not just daily tasks.
+They help set important priorities for the team.
+They also provide a timeline for achieving the desired results.

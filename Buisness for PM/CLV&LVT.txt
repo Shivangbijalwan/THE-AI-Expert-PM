@@ -1,0 +1,20 @@
+CLV - Customer Lifetime Value 
+LVT - Lifetime Value Time 
+
+        CLV = LVT 
+
+Holding old coustomer is the best to find new one 
+
+
+                            CLV and CAC
+
+comparising these two and calculate coustomer cost then hold them to be in your buisness by giving offers according to CAC and all.
+
+LVT is top priority for all time 
+CAC should be least then the purchase by user 
+
+How much a single customer is giving us money and just holding him for all time is LVT
+
+
+     LVT = Annual revenue by a customer X no of years of retention period 
+
