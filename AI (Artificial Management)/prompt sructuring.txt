@@ -1,0 +1,37 @@
+What is a prompt?
+Clear instruction + context + goal is a prompt 
+
+Prompt structuring - It is the process where prompting is done and tells a path how it should be done and tells how it should be .
+
+The pathway of a prompt should be - 
+
+Role        -> Who you are 
+Context     -> Why you have to do this 
+Task        -> What you have to do
+Constraints -> How you have to do 
+
+
+Types of prompting:
+
+1⟫ ROLE PROMPTING ->
+
+Role prompting is the process of giving AI an Identity behaviour thought and role
+
+for example- 
+
+You are a senior AI product manager tell me what a product is ?
+
+here: "You are a senior AI product manager" is a role given to LLM
+
+2⟫ CHAIN OF THOUGHTS ->
+
+prompting in a format of chain is chain prompting
+
+giving a prompt to get the data in steps so its clear how to do work is chain prompting 
+
+for example-
+
+• step by step method
+• point wise method 
+• give in a proper format 
+• analyse and give in points
