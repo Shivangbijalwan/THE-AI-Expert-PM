@@ -1,0 +1,94 @@
+JTBD — Jobs To Be Done
+1. What is JTBD?
+
+Jobs To Be Done means:
+
+People “hire” a product or service to help them make progress toward a goal.
+
+A customer does not simply buy a product. They buy it because they want to achieve something.
+
+Example:
+People don't buy a smartphone only because it is a smartphone. They buy it to:
+
+Take photos
+Watch videos
+Communicate
+Track health
+Use apps
+Work or study
+2. What is a Job?
+
+A Job is the task or progress a customer wants to accomplish.
+
+Simple formula:
+
+Customer → Need/Problem → Job → Desired Outcome
+
+Example:
+
+Customer: Student
+Problem: Needs to attend online classes
+Job: Attend classes easily from anywhere
+Desired outcome: Learn without interruption
+
+3. Functional Job vs Desired Outcome
+
+Functional Job: What the customer wants to do.
+
+Desired Outcome: What result the customer wants from doing it.
+
+Example:
+
+Job: Take a photo
+Desired Outcome: Get a clear, high-quality photo quickly.
+
+Another example:
+
+Job: Track health
+Desired Outcome: Know my daily health/activity level easily.
+
+4. How to Define a Job?
+
+Ask the customer:
+
+1. What do you want to accomplish?
+→ Understand the customer's goal.
+
+2. Why do you want to do it?
+→ Understand the motivation/reason.
+
+3. What problem are you trying to solve?
+→ Understand the customer's pain point.
+
+4. What outcome do you expect?
+→ Understand what success looks like.
+
+Useful JTBD Question
+
+“What are you trying to accomplish, and why is it important to you?”
+
+5. Example — Smartphone Customer
+
+Customer A
+
+Job	What they want	Desired Outcome
+Job 1: Take photos	Capture moments	Clear and beautiful photos
+Job 2: Play videos	Watch entertainment	Smooth and enjoyable viewing
+Job 3: Track health	Monitor activity	Understand health/activity easily
+Job 4: Communicate	Call/message others	Stay connected
+Job 5: Work/Study	Use productivity apps	Complete work efficiently
+6. Why JTBD is Useful?
+
+JTBD helps a company:
+
+Discover valuable solutions → Build the right product → Communicate the solution → Communicate value to stakeholders
+
+The key question is not:
+
+“What product should we build?”
+
+Instead ask:
+
+“What job is the customer trying to get done?”
+
+Then design the product around that job.
