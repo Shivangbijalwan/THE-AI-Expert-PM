@@ -1,0 +1,74 @@
+PRICING STRATEGIES
+
+1. COST-PLUS PRICING STRATEGY
+
+Definition:
+Cost-plus pricing is a simple method where a company calculates the total cost of making a product or providing a service and then adds a desired profit.
+
+Formula:
+Total Cost + Desired Profit = Selling Price
+
+Example:
+Production Cost = $500
+Overhead Costs = $200
+Total Cost = $700
+Desired Profit = $200
+
+Selling Price = $700 + $200 = $900
+
+In simple words:
+First calculate the cost, then add profit to decide the price.
+
+
+2. VALUE-BASED PRICING STRATEGY
+
+Definition:
+Value-based pricing sets the price according to how much value or benefit customers believe they receive from a product or service, rather than only looking at its production cost.
+
+Key Concepts:
+- Customer Value: Price depends on the benefits customers receive.
+- Perceived Value: Customers may pay more if they believe the product is highly useful.
+- Differentiation: Unique features, better quality, convenience, or better results can justify a higher price.
+
+Example:
+A software product may cost $50 to develop for a customer, but it can help a business save $1,000 every month. The company may charge $200 because of the value it provides.
+
+In simple words:
+Price is based on the value the customer gets.
+
+
+3. COMPETITIVE PRICING STRATEGY
+
+Definition:
+Competitive pricing is a strategy where a company sets its price by looking at what competitors charge for similar products or services.
+
+Key Concepts:
+- Market Matching: Set a price similar to competitors.
+- Lower Price: Charge less to attract price-sensitive customers.
+- Premium Price: Charge more when the product offers additional value or better features.
+- Competitor Monitoring: Businesses regularly check competitors' prices and offers.
+
+Example:
+If competitors sell a product for around $100, a company might:
+- Charge $95 to attract customers.
+- Charge $100 to match the market.
+- Charge $120 if it offers better quality or additional features.
+
+In simple words:
+Price is based on what competitors are charging.
+
+
+QUICK DIFFERENCE
+
+Cost-Plus Pricing    → Cost + Profit
+Value-Based Pricing  → Customer's Perceived Value
+Competitive Pricing  → Competitors' Prices
+
+
+EASY WAY TO REMEMBER
+
+Cost-Plus → "How much did it cost us?"
+
+Value-Based → "How much is it worth to the customer?"
+
+Competitive → "How much are competitors charging?"
