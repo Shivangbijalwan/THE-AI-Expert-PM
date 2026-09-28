@@ -8,6 +8,7 @@ Its like mapping out the exact road from -
 In simple language its the motion detacts how people find out about you ,  how they try your product , and how they buy it .
 
 
+
 2 - INBOUND vs OUTBOUND Sales 
 
 - Inbound Sales (The Magnet):
@@ -20,5 +21,31 @@ In simple language its the motion detacts how people find out about you ,  how t
   your sales team reaches out directly to people who match your target profile , even Iy they havent ask for your product yet.
 
   Practive , ditrect and relationship - driven 
+
+
+3 - Sales-Led Growth(SLG)
+
+How it works: humans drive the sale. You talk to a salesperson , get a custom demo , negotiate a contaract , and then use the produt. 
+
+selling a $1,000,000 sequrity system to a bank 
+
+4 - Product Led Growth (PLG)
+
+How it works: The product itself drives aquisiton,retention and expention, Users sign UP for a free tier or Trial , Experiece the value instantly , and upgrade to paid plans inside the app without ever talking to a salesperson.
+
+The PLG is a system that helps you to gain money from uers for using some of your features that they cant use in free one 
+
+5 - Ideal Customer Profile (ICP)
+
+Its is - Who are we built for 
+
+It is the detailed discription of the exact company or a person who will give value to your buisness and get the most value from your product and the service.
+
+Sales cycle from stranger to customers
+Lead genertion -> Qualification -> Pitch -> Handling objection  -> Closing -> 
+Retention and Expention 
+
+These Pieces , and you understand the engine room of almost every sucessful mordern buisness.
+
 
 
