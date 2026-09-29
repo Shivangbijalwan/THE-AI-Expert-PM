@@ -1,0 +1,67 @@
+TAM, SAM, SOM — Product Manager Context
+
+TAM — Total Addressable Market
+The entire market opportunity if your product could reach every potential customer.
+
+Example:
+You build a SaaS product for restaurants to manage online orders.
+If 1 million restaurants could potentially use the software, the total revenue/opportunity from all of them is TAM.
+
+Product Manager question:
+“How big could this business become?”
+
+
+SAM — Serviceable Available Market
+The part of TAM that your product can actually serve based on geography, target customer, product capabilities, pricing, etc.
+
+Example:
+Your SaaS targets restaurants in India.
+If 200,000 Indian restaurants fit your target market, that is your SAM.
+
+Product Manager question:
+“Which part of the total market can we actually target?”
+
+
+SOM — Serviceable Obtainable Market
+The realistic portion of SAM that your company can capture, considering competition, resources, sales capacity, budget, brand, and execution.
+
+Example:
+Out of 200,000 target restaurants, you believe you can realistically acquire 2,000 customers.
+Those 2,000 customers represent your SOM.
+
+Product Manager question:
+“How much can we realistically capture?”
+
+
+Simple way to remember:
+
+TAM → Everyone who could need it
+↓
+SAM → People we can actually serve
+↓
+SOM → People we can realistically win
+
+
+Why Product Managers use TAM, SAM, SOM:
+
+1. Validate whether a product opportunity is large enough.
+2. Define the target market and ideal customers.
+3. Decide where to launch first.
+4. Prioritize product features and market segments.
+5. Communicate market opportunity with founders, investors, and teams.
+6. Estimate realistic business growth potential.
+
+
+Quick example:
+
+Product: Restaurant Management SaaS
+
+TAM: All restaurants that could use restaurant software
+SAM: Restaurants in the target geography/segment that the product can serve
+SOM: Restaurants the company can realistically acquire
+
+
+Key idea:
+TAM = Maximum opportunity
+SAM = Targetable opportunity
+SOM = Realistic opportunity
