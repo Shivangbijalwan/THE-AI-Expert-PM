@@ -4,6 +4,8 @@ Standard prompting often fails at complex logic. Advanced reasoning techniques m
 
 ==================================================
 
+
+
 CHAIN OF THOUGHT (CoT): BREAKING DOWN THE LOGIC
 ==================================================
 Concept:
@@ -37,6 +39,9 @@ Magic Phrase: Adding "Let's think step by step" to logic or math prompts drastic
 Structure: Outline the explicit steps you want the model to take for complex problems.
 
 ==================================================
+
+
+
 2. SELF-CONSISTENCY: EXPLORING MULTIPLE PATHS
 
 Concept:
@@ -59,6 +64,9 @@ Temperature Adjustment: Keep temperature around 0.5 to 0.7. If temperature is 0,
 Diversity: Observe how the model approaches the problem differently across the runs.
 
 ==================================================
+
+
+
 3. RUN MULTIPLE TIMES & AGGREGATE (MAJORITY VOTING)
 
 Concept:
