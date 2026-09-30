@@ -1,0 +1,87 @@
+INTRODUCTION TO ADVANCED PROMPTING
+
+Standard prompting often fails at complex logic. Advanced reasoning techniques make Large Language Models (LLMs) think like expert problem-solvers by breaking down tasks, exploring diverse paths, and aggregating results.
+
+==================================================
+
+CHAIN OF THOUGHT (CoT): BREAKING DOWN THE LOGIC
+==================================================
+Concept:
+Instead of asking an AI for an immediate answer, Chain of Thought (CoT) prompts the model to write out its intermediate reasoning steps explicitly before giving the final answer.
+
+Why it works:
+LLMs predict the next token based on context. Seeing step-by-step math or logic in the prompt primes the model to generate subsequent logical steps accurately.
+
+How to Do It:
+
+Zero-Shot CoT: Add phrases like "Let's think step by step."
+
+Few-Shot CoT: Provide 1 or 2 examples of a problem solved step-by-step.
+
+Example Prompt:
+"A store sells apples in bags of 5. John buys 4 bags of apples. He eats 3 apples and gives 6 apples to his friend. How many apples does John have left?
+Let's think step by step:
+
+Calculate the total number of apples John bought.
+
+Subtract the apples he ate.
+
+Subtract the apples he gave away.
+
+State the final answer clearly."
+
+Key Tips:
+
+Magic Phrase: Adding "Let's think step by step" to logic or math prompts drastically improves accuracy.
+
+Structure: Outline the explicit steps you want the model to take for complex problems.
+
+==================================================
+2. SELF-CONSISTENCY: EXPLORING MULTIPLE PATHS
+
+Concept:
+Even with CoT, an AI can sometimes make a mistake in a single reasoning chain. Self-Consistency addresses this by generating multiple different reasoning paths for the same prompt.
+
+How to Do It:
+
+Submit the exact same CoT prompt multiple times (e.g., 3 to 5 times) either manually in chat or via an API.
+
+Adjust the model's temperature higher (e.g., between 0.5 and 0.8) so it explores different phrasings and paths rather than always picking the most predictable next word.
+
+Example Prompt Execution:
+Prompt: "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost? Think step by step."
+(Submit this same prompt 5 independent times.)
+
+Key Tips:
+
+Temperature Adjustment: Keep temperature around 0.5 to 0.7. If temperature is 0, the model will output the exact same answer every time, defeating the purpose.
+
+Diversity: Observe how the model approaches the problem differently across the runs.
+
+==================================================
+3. RUN MULTIPLE TIMES & AGGREGATE (MAJORITY VOTING)
+
+Concept:
+Once you have your multiple outputs from Self-Consistency, you collect all the final answers and use majority voting to find the final consensus.
+
+Example Process / Workflow:
+Imagine running the bat-and-ball problem 5 times with these results:
+
+Run 1: $0.05 (Step-by-step logic was correct)
+
+Run 2: $0.10 (Model made a mental math error)
+
+Run 3: $0.05 (Step-by-step logic was correct)
+
+Run 4: $0.05 (Step-by-step logic was correct)
+
+Run 5: $0.10 (Model made a mental math error)
+
+The Winner:
+$0.05 appears 3 times, while $0.10 appears 2 times. By majority vote, $0.05 is selected as the correct, robust final answer.
+
+Key Tips:
+
+Majority Voting: Choose the answer that appears most frequently among the runs.
+
+Inspect the Logic: Check if the winning answers also share the correct reasoning path, not just the final number.
