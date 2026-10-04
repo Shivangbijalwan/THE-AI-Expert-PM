@@ -14,7 +14,11 @@
 // 6- RHLF (Reinforcement learning with Human Feedback) is done (It is a training method used to align AI models with human preferences)
 
 
+
+
 //What IS G-P-T
+
+
 
 //Generative Pre-Trained Transformers 
 //It is a large language model that uses deep learning to understand and write human-like text. It predicts the next word in a sentence to form meaningful responses.
@@ -24,3 +28,6 @@
 
 //Attention
 // It is the process where all words connect with each other tp help the model to find the missing word and sentence with most of its acuracy 
+
+
+.......
