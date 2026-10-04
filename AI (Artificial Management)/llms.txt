@@ -4,6 +4,8 @@
 
 // How It works
 
+
+
 // 1- It assigns Probablity
 // 2- The top of the probablity the next word will be correct 
 // 3- massive text for training 
