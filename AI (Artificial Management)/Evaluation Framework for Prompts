@@ -1,0 +1,285 @@
+
+1. What is Prompt Evaluation?
+
+Prompt evaluation is the process of measuring how well a prompt produces the desired AI output.
+
+Instead of deciding that a prompt is good because one response looks good, we test the prompt systematically using defined criteria.
+
+Basic Process
+
+Prompt → AI Output → Evaluate Output → Score → Compare → Improve
+
+The important point is to define what "good" means before testing.
+
+2. Rubrics
+
+A rubric is a set of criteria used to judge the quality of an AI response.
+
+For example, for a customer-support AI, we could evaluate:
+
+Accuracy — Is the information correct?
+Relevance — Does it answer the user's question?
+Clarity — Is it easy to understand?
+Tone — Is the response appropriate?
+Format — Did it follow the required format?
+Example
+
+Prompt:
+
+"Explain how to reset a password. Give 3 numbered steps."
+
+AI Response:
+
+"Go to Settings. Select Password. Enter your new password."
+
+Evaluation:
+
+Accuracy: 5/5
+Relevance: 5/5
+Clarity: 5/5
+Format: 4/5
+
+The format loses points because the answer was not actually presented as numbered steps.
+
+Therefore, a rubric gives us a consistent way to judge outputs.
+
+3. Benchmarks
+
+A benchmark is a fixed collection of test cases used to evaluate a prompt.
+
+Instead of testing a prompt only once, we create multiple examples that represent the types of inputs our AI will receive.
+
+Example
+
+A benchmark could contain 50 questions:
+
+Test 1: Explain photosynthesis.
+Test 2: Explain gravity.
+Test 3: Explain DNA.
+...
+Test 50: Explain black holes.
+
+We then run Prompt A and Prompt B on the same 50 questions.
+
+Example Results
+Prompt	Accuracy	Relevance	Format	Overall
+Prompt A	4.1	4.3	3.5	3.97
+Prompt B	4.6	4.7	4.8	4.70
+
+Prompt B performs better based on the benchmark.
+
+A benchmark makes prompt evaluation more reliable because every version is tested on the same set of inputs.
+
+4. A/B Testing
+
+A/B testing means comparing two versions of something under the same conditions.
+
+For prompt evaluation:
+
+A = Old prompt
+B = New prompt
+
+Both prompts receive the same inputs, and their results are compared.
+
+Example
+
+Prompt A:
+
+"Summarize this article."
+
+Prompt B:
+
+"Summarize this article in 5 bullet points. Include only information explicitly stated in the article."
+
+Suppose we test both prompts on 100 articles.
+
+Results:
+
+Prompt A: 78% acceptable responses
+Prompt B: 91% acceptable responses
+
+Prompt B performs 13 percentage points better.
+
+This gives us evidence that the new prompt is an improvement.
+
+5. Metrics
+
+A metric is a measurable value used to determine how well a prompt or AI system is performing.
+
+Different AI tasks require different metrics.
+
+Classification
+
+For example:
+
+"Is this message SPAM or NOT SPAM?"
+
+Possible metrics:
+
+Accuracy
+Precision
+Recall
+F1 Score
+Summarization
+
+Possible metrics:
+
+Factual accuracy
+Relevance
+Conciseness
+Coverage
+Structured Output
+
+For example, asking an AI to produce JSON:
+
+{
+"name": "...",
+"age": 20
+}
+
+Possible metrics:
+
+Valid JSON rate
+Required fields present
+Correct values
+Format compliance
+
+Therefore:
+
+Metric = What are we measuring?
+
+6. Human Evaluation
+
+Human evaluation means that people manually inspect AI responses and give them scores.
+
+For example:
+
+Accuracy: 1–5
+Relevance: 1–5
+Clarity: 1–5
+Advantages
+Humans can understand context.
+Useful for subjective qualities such as tone and helpfulness.
+Can identify problems that automated metrics miss.
+Disadvantages
+Slow
+Expensive
+Different people may give different scores.
+7. LLM-as-a-Judge
+
+LLM-as-a-Judge means using another AI model to evaluate an AI-generated response.
+
+For example:
+
+"Evaluate this answer from 1–5 based on accuracy, relevance and clarity."
+
+The evaluator model produces a score.
+
+Advantages
+Fast
+Can evaluate large numbers of responses.
+Cheaper than manually evaluating every response.
+Disadvantages
+The evaluator can make mistakes.
+It may have biases.
+It should not automatically be treated as perfect.
+
+For important systems, human evaluation can be used to verify the automated evaluation.
+
+8. Complete Prompt Evaluation Framework
+
+The complete process can be represented as:
+
+DEFINE SUCCESS
+↓
+CREATE RUBRIC
+↓
+CREATE TEST DATASET / BENCHMARK
+↓
+RUN PROMPT A AND PROMPT B
+↓
+EVALUATE OUTPUTS
+↓
+CALCULATE METRICS
+↓
+COMPARE RESULTS
+↓
+IMPROVE THE PROMPT
+↓
+TEST AGAIN
+
+This creates a continuous improvement loop.
+
+9. Example: AI Resume Reviewer
+
+Imagine we are building an AI that reviews resumes.
+
+Step 1 — Create Prompts
+
+Prompt A = Existing prompt
+
+Prompt B = Improved prompt
+
+Step 2 — Create Benchmark
+
+Use 100 different resumes as the test dataset.
+
+Step 3 — Create Rubric
+
+Evaluate each response on:
+
+Accuracy: 1–5
+Relevance: 1–5
+Completeness: 1–5
+Clarity: 1–5
+Step 4 — Test Both Prompts
+Criteria	Prompt A	Prompt B
+Accuracy	4.1	4.6
+Relevance	3.9	4.7
+Completeness	4.0	4.5
+Clarity	4.2	4.6
+Average	4.05	4.60
+Step 5 — Conclusion
+
+Prompt B has a higher average score.
+
+Therefore, based on our evaluation framework, Prompt B performs better than Prompt A.
+
+10. Four Important Terms to Remember
+Rubric
+
+How do I judge the quality?
+
+Benchmark
+
+What test cases will I use?
+
+Metric
+
+What number will I measure?
+
+A/B Testing
+
+Which version performs better?
+
+11. One-Line Summary
+
+Prompt evaluation is a systematic process of testing prompts against a defined benchmark, judging their outputs using a rubric, measuring performance with metrics, and comparing different prompt versions to improve results.
+
+Final Mental Model
+
+PROMPT
+↓
+TEST DATA
+↓
+AI OUTPUT
+↓
+RUBRIC
+↓
+SCORE / METRICS
+↓
+A/B COMPARISON
+↓
+IMPROVE PROMPT
+↓
+TEST AGAIN
