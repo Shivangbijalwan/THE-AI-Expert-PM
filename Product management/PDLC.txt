@@ -13,7 +13,13 @@ Launch - launching the app or product to the coustomer and help all coustomer to
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 
+
+
 GTM GUIDE
+
+
+
+
 
 Product to connect coustomers 
 Go to Market strategy
@@ -24,6 +30,10 @@ payment strategy
 Scale the app in GTM after Launch 
 
 ////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
 
 4 Phases of PDLC (Product Development Lifecycle)
 
@@ -61,11 +71,18 @@ Activation
 
 
 
+
+
+
 (3) - MATURITY - IT IS 
 
 Stable Product
 Making app scalable
 More features and maintaining in same pace
+
+
+
+
 
 
 
