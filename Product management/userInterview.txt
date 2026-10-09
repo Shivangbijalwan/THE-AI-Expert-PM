@@ -2,6 +2,8 @@ User Reserch
 
 It is a reserch while talking face to face and asking users questions about product and how they feel and what there  feedback on it 
 
+
+
 // Ask everything directly to user
 
 asking multiple user 
@@ -17,6 +19,9 @@ It is a immagination that help to tell about what problems are the persona
 -> Pain paints of Persona 
 -> whill it really help or not 
 
+
+
+
 User Interface
 
 One on one conversation to the user where asking their need directly 
@@ -26,6 +31,10 @@ One on one conversation to the user where asking their need directly
 -> surface ans 
 -> notes
 -> pattern 
+
+
+
+
 
 Surveys and Questionaries 
 
