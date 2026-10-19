@@ -1,0 +1,157 @@
+
+## Few-Shot & In-Context Learning
+
+### 1. What is In-Context Learning?
+
+In-Context Learning (ICL) is a technique in which we provide instructions, information, or examples to an AI model directly in the prompt to help it understand and perform a task. The model uses the given context to generate an appropriate response without changing its trained parameters.
+
+Example:
+
+Prompt: Translate the following English sentence into Hindi.
+
+Example 1:
+English: Good morning.
+Hindi: सुप्रभात।
+
+Example 2:
+English: Thank you.
+Hindi: धन्यवाद।
+
+Now translate:
+English: How are you?
+Hindi:
+
+The AI uses the examples to understand the expected task and output format.
+
+### 2. What is Zero-Shot Prompting?
+
+Zero-shot prompting means asking an AI model to perform a task without providing any examples. The model relies on the instructions and its existing knowledge.
+
+Example:
+
+Prompt: Classify this review as positive or negative: "The food was delicious."
+
+Output: Positive.
+
+Advantages:
+- Simple and quick to use.
+- Requires fewer tokens.
+- Works well for many common tasks.
+
+Limitation:
+- The output may not follow the exact format or style we expect.
+
+### 3. What is Few-Shot Prompting?
+
+Few-shot prompting means providing a few examples in the prompt before asking the AI to perform a similar task. These examples help the model understand the expected pattern, format, or behaviour.
+
+Example:
+
+Prompt:
+
+Review: "The product is excellent."
+Sentiment: Positive
+
+Review: "The service was terrible."
+Sentiment: Negative
+
+Review: "The delivery was fast and the quality was great."
+Sentiment:
+
+Output: Positive.
+
+Advantages:
+- Helps demonstrate the required format.
+- Can improve consistency.
+- Useful for classification, text formatting, extraction, and other tasks.
+
+Limitation:
+- Requires additional prompt space.
+- Poor examples may lead to poor results.
+
+### 4. Difference Between Zero-Shot and Few-Shot Prompting
+
+Zero-shot prompting uses instructions without examples, whereas few-shot prompting uses instructions along with a small number of examples.
+
+Zero-Shot Example:
+"Classify this review as positive or negative: The product is amazing."
+
+Few-Shot Example:
+"Review: The product is amazing. Sentiment: Positive.
+Review: The product is disappointing. Sentiment: Negative.
+Review: The product is excellent. Sentiment:"
+
+### 5. How Do Examples Improve AI Performance?
+
+Examples help an AI model understand what kind of response is expected. They can demonstrate:
+
+1. The structure of the answer.
+2. The style and tone to follow.
+3. The relationship between input and output.
+4. The rules used to classify or process information.
+5. The level of detail required.
+
+Examples guide the model, but they do not guarantee a correct answer.
+
+### 6. Why Do Example Quality and Order Matter?
+
+Example Quality:
+Examples should be clear, accurate, relevant, and consistent. Incorrect or confusing examples can teach the model the wrong pattern for the current task.
+
+Example Order:
+The order of examples can influence the model's response. For some tasks, changing the order may change the output. Therefore, examples should be arranged clearly and tested in different orders when reliability matters.
+
+Example Diversity:
+Using examples that represent different situations can help the model understand the task more broadly.
+
+### 7. Practical Applications
+
+Few-shot and in-context learning can be used for:
+
+- Customer feedback classification.
+- Chatbot response formatting.
+- Product review analysis.
+- Extracting information from documents.
+- Categorizing support tickets.
+- Generating product descriptions.
+- Following a specific writing style.
+
+Example for a product business:
+
+Input: "The battery lasts all day."
+Output Category: Positive Feedback
+
+Input: "The product stopped working after two days."
+Output Category: Negative Feedback
+
+The AI can use these examples to classify new product reviews.
+
+### 8. Important Terms
+
+In-Context Learning (ICL): Learning a task pattern from information or examples provided in the prompt.
+
+Zero-Shot Prompting: Performing a task using instructions without examples.
+
+Few-Shot Prompting: Performing a task using instructions and a few examples.
+
+Prompt: The instructions and context provided to an AI model.
+
+Consistency: Producing responses that follow the same expected pattern.
+
+### 9. Best Practices
+
+- Write clear instructions.
+- Use correct and relevant examples.
+- Keep the input-output format consistent.
+- Include enough variety to cover important cases.
+- Test different example orders.
+- Check the model's output instead of assuming it is always correct.
+- Use zero-shot prompting for simple tasks and try few-shot prompting when the task requires a specific pattern or format.
+
+### 10. Summary
+
+Zero-shot prompting asks an AI to perform a task without examples. Few-shot prompting provides a few examples to demonstrate the expected result. In-context learning is the broader concept of using information in the prompt to guide a model's response.
+
+The quality, relevance, diversity, and order of examples can influence the results. These techniques are useful for building AI products that need consistent, structured, and task-specific outputs.
+
+**Key Takeaway:** Clear instructions plus good examples can help an AI model produce more useful and consistent responses without retraining the model.
