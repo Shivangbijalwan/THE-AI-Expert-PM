@@ -1,0 +1,41 @@
+AI REVENUE MODELS: SHORT VERSION
+
+WHAT IT IS
+The method an AI business uses to earn money from its products, services, or infrastructure.
+
+MAIN MODELS
+1. Per-API-call: Pay per request to the AI service. Best for developers and chatbots.
+2. Per-seat: Fixed fee per user (e.g., ₹1,000 x 20 users = ₹20,000/month). Best for workplace and team tools.
+3. Freemium: Free tier, with paid upgrades for more features or usage. Best for consumer apps and image generators.
+4. SaaS subscription: Recurring monthly or annual plans. Best for writing, CRM, and analytics tools.
+5. Token-based: Pay by tokens processed (input and output). Best for LLM APIs and document processing.
+6. Marketplace: Platform takes a commission on sales between buyers and sellers. Best for agent directories and plugin stores.
+
+Models can be combined, e.g., a free tier plus subscriptions plus per-seat team pricing.
+
+API ECONOMICS
+- Gross profit = Revenue - Delivery costs
+- Gross margin (%) = (Gross profit / Revenue) x 100
+- Example: ₹1,00,000 revenue - ₹30,000 costs = ₹70,000 profit, a 70% margin.
+
+If you charge ₹500 per customer but spend ₹700 on AI usage, you lose money on every customer.
+
+Ways to fix it:
+- Use cheaper models
+- Cut token usage
+- Cache results
+- Set usage limits
+- Adjust pricing
+- Route simple tasks to smaller models
+
+KEY METRICS
+- MRR / ARR: Monthly / annual recurring revenue
+- CAC: Cost to acquire a customer
+- LTV: Value a customer generates over time
+- Churn: Rate of customers leaving
+- Conversion rate: Free users who become paying
+- Gross margin: Revenue left after delivery costs
+- ARPU: Average revenue per user
+
+TAKEAWAY
+A good AI product needs a sustainable business model, not just a good model. The right pricing depends on customers, usage patterns, value, competition, and delivery costs. High usage doesn't automatically mean high profit.
