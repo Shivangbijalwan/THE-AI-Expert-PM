@@ -1,0 +1,131 @@
+PRODUCT MANAGEMENT: IDEATION - SCAMPER & BLUE OCEAN
+====================================================
+
+1. WHAT IS IDEATION?
+--------------------
+Ideation means generating ideas for new products or finding ways to improve
+existing products.
+
+Suppose you have created a text-to-audio product like TTA. You want to make it
+more useful for people who create videos. You might ask:
+- How can I make it easier to use?
+- What features are missing?
+- How can I make it different from other AI voice tools?
+- Why would someone choose my product instead of a competitor's?
+
+Product managers use frameworks such as SCAMPER and Blue Ocean Strategy to
+answer these questions.
+
+
+2. SCAMPER: SEVEN WAYS TO IMPROVE A PRODUCT
+-------------------------------------------
+SCAMPER is a creative thinking framework. Each letter represents a different
+way to generate ideas.
+
+S - SUBSTITUTE (Replace something)
+    Ask: What can I replace with something better?
+    AI example: Replace expensive, paid text-to-speech APIs with a reliable,
+    lower-cost alternative, while maintaining good voice quality.
+
+C - COMBINE (Join two things)
+    Ask: What two features could work better together?
+    AI example: Combine text-to-speech with automatic subtitles, so video
+    creators can generate narration and captions in one place.
+
+A - ADAPT (Borrow an idea from somewhere else)
+    Ask: What works in another product that I can adapt?
+    AI example: Adapt the document templates used in presentation tools to
+    create ready-made narration templates for YouTube videos, tutorials and
+    advertisements.
+
+M - MODIFY (Change or improve something)
+    Ask: What can I make faster, simpler, or more useful?
+    AI example: Add controls for speaking speed, pauses, pronunciation and
+    voice style.
+
+P - PUT TO ANOTHER USE (Find a new use)
+    Ask: Who else could benefit from this technology?
+    AI example: Use text-to-speech not just for YouTube creators, but also for
+    teachers making lessons, students creating revision audio, or businesses
+    producing training materials.
+
+E - ELIMINATE (Remove something unnecessary)
+    Ask: What makes the product complicated or frustrating?
+    AI example: Remove unnecessary setup steps. Let users paste text, select a
+    voice and generate audio without navigating several pages.
+
+R - REVERSE (Change the usual order or approach)
+    Ask: What if I did things in the opposite order?
+    AI example: Instead of making users write a complete script before
+    generating audio, let them describe their video idea first and have AI
+    create a draft script and narration.
+
+Remember: SCAMPER doesn't automatically give you a successful product idea. It
+helps you generate ideas that you can later test with real users.
+
+
+3. BLUE OCEAN STRATEGY: CREATE A DIFFERENT KIND OF PRODUCT
+----------------------------------------------------------
+Imagine there are 100 AI text-to-speech tools in the market. Most compete on
+the same things:
+- Voice quality
+- Number of voices
+- Pricing
+- Generation speed
+
+RED OCEAN
+Many competitors fighting for the same customers.
+- Same audience
+- Similar features
+- Price competition
+
+BLUE OCEAN
+A market space where you create a different kind of value, reducing direct
+competition.
+- Underserved audience
+- Different experience
+- New source of value
+
+Example: Building a better AI audio product
+
+Suppose you discover that many beginner video creators struggle to produce
+narration, subtitles and a ready-to-use script.
+
+Instead of building just another text-to-speech tool, you create an AI Video
+Narration Workspace. It helps users:
+1. Turn an idea into a script.
+2. Generate voice narration.
+3. Create subtitles.
+4. Organize audio and captions for editing.
+
+The product is now solving a broader workflow problem, not just converting
+text into speech.
+
+This is a potential Blue Ocean opportunity, not proof that no competitors
+exist. You would still research the market and validate whether customers
+actually want it.
+
+Four useful Blue Ocean questions (the ERRC Grid)
+
+  ELIMINATE - What can you remove?
+              Example: Complicated setup
+  REDUCE    - What can you make less burdensome?
+              Example: Manual editing steps
+  RAISE     - What can you improve significantly?
+              Example: Ease of use
+  CREATE    - What new value can you introduce?
+              Example: Script-to-narration workflow
+
+
+4. HOW SCAMPER AND BLUE OCEAN WORK TOGETHER
+-------------------------------------------
+Step 1: SCAMPER
+        Generate many possible improvements and new ideas.
+
+Step 2: BLUE OCEAN THINKING
+        Identify ideas that could deliver different value to an underserved
+        audience.
+
+Step 3: VALIDATE
+        Talk to potential customers, study competitors and test a simple
+        prototype.
