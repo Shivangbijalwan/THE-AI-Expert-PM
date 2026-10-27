@@ -1,559 +1,379 @@
+SYSTEM PROMPTS, AI PERSONAS, TONE & GUARDRAILS
+================================================
+
 1. WHAT IS A SYSTEM PROMPT?
 
-A system prompt is a set of instructions that guides how an AI model should behave while performing a task or responding to a conversation.
+A system prompt is a set of instructions that guides how an AI model should behave while responding to users.
 
-It can define the AI's role, tone, communication style, response format, limitations, rules, and expected output.
-
-In simple words:
-
-System Prompt = How the AI should work.
-User Prompt = What the AI should do.
+It can define:
+- The AI's role
+- Its personality or persona
+- Its tone and communication style
+- The tasks it should perform
+- The rules and limitations it should follow
+- The format in which it should respond
 
 Example:
 
 System Prompt:
-You are a programming tutor. Explain technical concepts in simple English, use beginner-friendly examples, and avoid unnecessary technical jargon.
+"You are a friendly Python tutor. Explain programming concepts in simple English. Give practical examples and avoid unnecessary technical jargon. If you are unsure about an answer, clearly say so."
 
 User Prompt:
-Explain JavaScript variables.
+"What is a Python function?"
 
-Expected Result:
-The AI explains variables in simple English, provides code examples, and teaches the concept at a beginner-friendly level.
+The system prompt guides HOW the AI answers, while the user prompt tells it WHAT the user wants to know.
 
-A system prompt helps make responses more consistent, but it does not guarantee perfect accuracy or compliance.
+Important:
+System prompts guide model behaviour, but they do not guarantee perfect results. The AI may misunderstand instructions or make mistakes.
 
 
-2. SYSTEM PROMPT VS. USER PROMPT
+2. SYSTEM PROMPT VS USER PROMPT
 
 SYSTEM PROMPT:
-Defines the AI's general behavior and instructions.
+Defines the AI's general role, behaviour and instructions.
 
-Examples:
-- Act as a beginner-friendly programming tutor.
-- Use a professional but conversational tone.
-- Explain technical concepts with practical examples.
-- Clearly distinguish facts from assumptions.
-- Avoid unnecessary information.
+Example:
+"You are a professional web development tutor. Explain concepts step by step and use beginner-friendly examples."
 
 USER PROMPT:
-Provides the specific task, question, or instruction.
-
-Examples:
-- Explain Python functions.
-- Write a LinkedIn post about artificial intelligence.
-- Create a landing page for a gym.
-- Compare two business ideas.
-- Debug this JavaScript code.
+Provides a particular request or task.
 
 Example:
+"Explain how JavaScript event listeners work."
 
-System Prompt:
-You are a product management tutor. Explain concepts in simple English and include practical business examples.
+The AI combines the applicable instructions with the user's request to generate a response.
 
-User Prompt:
-Explain product-market fit.
+Real-world example:
 
-The system prompt determines the teaching style, while the user prompt determines the topic.
+Imagine a restaurant.
+
+The system prompt is similar to the restaurant's service rules.
+The user prompt is similar to a customer's order.
+
+The rules define how the restaurant should operate, while the order defines what the customer wants.
 
 
-3. KEY ELEMENTS OF A SYSTEM PROMPT
+3. WHAT IS AN AI PERSONA?
 
-A. ROLE AND PERSONA
+An AI persona is the role, identity or style that an AI is instructed to adopt for a task.
 
-Defines the perspective or type of assistance the AI should provide.
-
-Examples:
-- Programming tutor
-- Product manager
-- Marketing strategist
-- Research assistant
-- Technical documentation writer
-
-A role helps guide the AI's approach but does not provide real-world qualifications or guarantee expert-level accuracy.
-
-B. TONE AND STYLE
-
-Defines how the AI communicates.
+A persona helps the AI respond in a way that suits a particular purpose.
 
 Examples:
-- Friendly and conversational
-- Professional and formal
-- Simple and educational
-- Direct and practical
-- Analytical and evidence-focused
 
-C. LEVEL OF DETAIL
+A. TEACHER PERSONA
+"You are a patient teacher who explains difficult concepts using simple language and examples."
 
-Defines how much information the AI should provide.
+B. CODING ASSISTANT PERSONA
+"You are a programming assistant who helps developers understand errors, debug code and improve their solutions."
 
-Examples:
-- Explain concepts for complete beginners.
-- Provide step-by-step instructions.
-- Keep answers concise unless detail is necessary.
-- Include examples for every major concept.
+C. BUSINESS ANALYST PERSONA
+"You are a business analyst who evaluates business ideas based on customer needs, costs, risks and market opportunities."
 
-D. OUTPUT FORMAT
+D. CUSTOMER SUPPORT PERSONA
+"You are a polite customer support assistant. Give clear, helpful and concise answers."
 
-Defines the structure of the response.
-
-Examples:
-- Use headings and bullet points.
-- Use numbered steps for tutorials.
-- Use tables for comparisons.
-- Format code inside code blocks.
-- Return valid JSON when required.
-
-E. RULES AND GUARDRAILS
-
-Defines boundaries and quality requirements.
-
-Examples:
-- Do not invent facts or statistics.
-- Explain uncertainty when information is incomplete.
-- Ask for missing essential information instead of guessing.
-- Avoid irrelevant information.
-- Follow the requested output format.
-
-Guardrails can reduce mistakes but cannot eliminate every error.
-
-F. TARGET AUDIENCE
-
-Defines who the response is intended for.
-
-Examples:
-- Complete beginners
-- College students
-- Experienced developers
-- Business owners
-- Technical decision-makers
-
-The same topic may require different explanations for different audiences.
-
-
-4. WHAT IS AI ROLE-PLAYING?
-
-AI role-playing means instructing an AI model to respond from a particular role, perspective, or working style.
-
-Examples:
-- A teacher explains concepts.
-- A product manager evaluates product opportunities.
-- A critical reviewer identifies weaknesses.
-- A marketing strategist develops promotional ideas.
-- A customer evaluates a product's usability.
-
-Example Task: Review a New Website Idea.
-
-Teacher:
-Explains the fundamentals and teaches what makes a website useful.
-
-Product Manager:
-Evaluates target users, customer problems, feature priorities, and product-market fit.
-
-Critical Reviewer:
-Identifies weaknesses, risks, unsupported assumptions, and possible improvements.
-
-The task remains the same, but the perspective and response structure change.
+The underlying AI model may be the same in all four cases. The instructions change how it approaches and presents its answers.
 
 Important:
-Role-playing guides the AI's response style. It does not guarantee that the AI has the knowledge, experience, or accuracy of the role it imitates.
+A persona changes the AI's instructed behaviour and communication style. It does not automatically give the model new knowledge, professional qualifications or additional capabilities.
 
 
-5. WHY ARE SYSTEM PROMPTS IMPORTANT?
+4. HOW PERSONAS CHANGE RESPONSES
 
-System prompts are useful because they can:
+Consider this user question:
 
-1. Improve consistency:
-   Encourage the AI to follow a similar response style across multiple requests.
+"What is a website API?"
 
-2. Define behavior:
-   Establish the AI's role, tone, and approach.
+Persona 1: Beginner-Friendly Teacher
 
-3. Improve relevance:
-   Help tailor answers to the intended audience and task.
+Expected response style:
+An API allows two software applications to communicate with each other. For example, a weather website can use an API to get current weather information from a weather service.
 
-4. Standardize output:
-   Make responses follow a specified format.
+Persona 2: Technical Developer
 
-5. Reduce unwanted responses:
-   Establish rules against guessing, irrelevant details, or unsupported claims.
+Expected response style:
+An API defines an interface through which software components exchange data or invoke functionality. A web API may expose HTTP endpoints that accept requests and return structured responses, such as JSON.
 
-6. Support repeated workflows:
-   Make it easier to use AI for recurring tasks such as coding, writing, research, and customer support.
+Persona 3: Business Analyst
 
-7. Improve product experience:
-   Help AI-powered applications deliver more predictable responses.
+Expected response style:
+An API allows a business to connect its software with other services. For example, an ecommerce website can use a payment gateway API to process customer payments without building its own payment infrastructure.
 
-System prompts are only one factor affecting output. The user prompt, model capabilities, available context, tools, and other instructions also matter.
+CONCLUSION:
+The question remains the same, but the explanation changes according to the persona.
+
+This is useful when building AI tutors, coding assistants, customer support bots and business tools.
 
 
-6. HOW MUCH DOES A SYSTEM PROMPT MATTER COMPARED TO A USER PROMPT?
+5. WHAT IS TONE?
 
-Both are important, but they serve different purposes.
+Tone is the way an AI communicates with the user.
 
-The system prompt establishes the general behavior and constraints. The user prompt supplies the immediate task and its specific requirements.
+Common tones include:
+
+- Friendly: Warm and approachable.
+- Professional: Clear, respectful and business-focused.
+- Formal: Structured and official.
+- Casual: Relaxed and conversational.
+- Educational: Explanatory and focused on learning.
+- Concise: Direct, with minimal unnecessary detail.
+- Empathetic: Acknowledges the user's concerns respectfully.
+
+Example instruction:
+
+"Use a friendly, simple and educational tone. Avoid sounding robotic or overly formal."
+
+A persona and a tone are related but different.
+
+Persona = WHO the AI is instructed to act as.
+Tone = HOW the AI communicates.
 
 Example:
-
-System Prompt:
-You are a concise technical tutor. Use simple English and provide one practical example.
-
-User Prompt 1:
-Explain APIs.
-
-User Prompt 2:
-Explain databases.
-
-User Prompt 3:
-Explain authentication.
-
-The system prompt encourages all three answers to follow a consistent teaching style. The user prompts determine which topics are explained.
-
-Now consider a vague system prompt:
-
-System Prompt:
-You are helpful.
-
-User Prompt:
-Explain APIs to a complete beginner using a real-world analogy and a simple code example.
-
-The detailed user prompt provides specific guidance that the vague system prompt does not contain.
-
-Conclusion:
-A system prompt is useful for consistent behavior across tasks. A user prompt is essential for specifying what the AI should accomplish. Neither is automatically more important in every situation.
-
-A clear system prompt combined with a clear user prompt usually produces better results than vague instructions.
+Persona: A programming teacher.
+Tone: Friendly and beginner-friendly.
 
 
-==================================================
-PART 2: PRACTICE — 70 MINUTES
-==================================================
+6. WHAT ARE GUARDRAILS?
 
-OBJECTIVE:
-Write three different system prompts for the same task and test each prompt using five identical user queries.
+Guardrails are instructions and safeguards designed to keep AI behaviour within defined boundaries.
 
-Chosen Task:
-Explain artificial intelligence concepts to beginners.
+They help an AI follow requirements, handle uncertainty and avoid inappropriate or unreliable responses.
 
-The goal is to observe how different instructions affect the AI's responses.
+Examples:
 
+ACCURACY GUARDRAIL:
+"If you do not know the answer, acknowledge the uncertainty instead of inventing facts."
 
-EXPERIMENT 1: SYSTEM PROMPT A — SIMPLE TEACHER
+SCOPE GUARDRAIL:
+"Focus on web development questions. If a request is unrelated, explain the assistant's intended scope."
 
-SYSTEM PROMPT:
+PRIVACY GUARDRAIL:
+"Do not ask users to share passwords, authentication codes or other unnecessary sensitive information."
 
-You are a beginner-friendly AI tutor. Explain artificial intelligence concepts in simple English. Avoid unnecessary technical jargon. Use familiar real-world examples and explain difficult terms before using them. Organize your responses with short headings and bullet points. Keep explanations understandable for someone with no technical background.
+OUTPUT GUARDRAIL:
+"Keep the answer under 200 words unless the user requests more detail."
 
-TEST QUERIES:
-
-1. What is artificial intelligence?
-2. What is machine learning?
-3. What is a large language model?
-4. What is prompt engineering?
-5. What are AI hallucinations?
-
-EXPECTED BEHAVIOR:
-
-The AI should focus on simplicity, definitions, and familiar examples. Its responses should be easy for beginners to understand.
-
-
-EXPERIMENT 2: SYSTEM PROMPT B — PRACTICAL TUTOR
-
-SYSTEM PROMPT:
-
-You are a practical AI tutor who teaches through real-world applications. Explain AI concepts in simple English. For every concept, provide a short definition, explain how it works at a high level, and include a practical example. When appropriate, mention one useful application and one limitation. Avoid unnecessary theory and keep the explanation structured.
-
-TEST QUERIES:
-
-1. What is artificial intelligence?
-2. What is machine learning?
-3. What is a large language model?
-4. What is prompt engineering?
-5. What are AI hallucinations?
-
-EXPECTED BEHAVIOR:
-
-The AI should emphasize practical applications, examples, basic working principles, and limitations. Responses may be longer than those from System Prompt A.
-
-
-EXPERIMENT 3: SYSTEM PROMPT C — STRUCTURED ANALYTICAL TUTOR
-
-SYSTEM PROMPT:
-
-You are an analytical AI tutor teaching college students who are new to artificial intelligence. For every concept, provide the following sections:
-
-1. Definition
-2. How It Works
-3. Real-World Example
-4. Benefits
-5. Limitations
-
-Use clear English and accurate terminology. Distinguish established facts from simplifications. Do not invent statistics or make unsupported claims. If a concept is uncertain or information is insufficient, explain the limitation clearly. Keep each section concise and relevant.
-
-TEST QUERIES:
-
-1. What is artificial intelligence?
-2. What is machine learning?
-3. What is a large language model?
-4. What is prompt engineering?
-5. What are AI hallucinations?
-
-EXPECTED BEHAVIOR:
-
-The AI should produce more structured and analytical responses. The fixed format may improve consistency but can also make simple answers unnecessarily long.
-
-
-7. HOW TO RUN THE EXPERIMENT
-
-Step 1:
-Open an AI chat interface that lets you provide a system prompt or configure custom instructions.
-
-Step 2:
-Enter System Prompt A and submit the first test query.
-
-Step 3:
-Repeat the process for all five queries, recording the results.
-
-Step 4:
-Start a fresh conversation with System Prompt B and repeat the same five queries.
-
-Step 5:
-Repeat the process with System Prompt C.
-
-Step 6:
-Compare the results using the same evaluation criteria.
+SAFETY GUARDRAIL:
+"Do not provide instructions that would facilitate harmful or illegal activity."
 
 Important:
-Use the same model, identical queries, and similar conversation conditions wherever possible. If your interface does not support system prompts directly, use its available instruction or configuration feature. Clearly label this as an approximation if the instructions are entered as ordinary user messages.
+A written guardrail is not a perfect security system. Reliable AI products may also require application-level validation, access controls, testing and monitoring. A system prompt alone cannot guarantee safety or prevent every unwanted response.
 
 
-8. EVALUATION CRITERIA
+7. WHAT IS OUTPUT FORMATTING?
 
-Evaluate every prompt using these five criteria.
+Output formatting tells an AI how to organise its response.
 
-A. Clarity:
-Was the answer easy to understand?
+Examples:
 
-B. Accuracy:
-Were the explanations factually correct?
+PLAIN TEXT:
+"Explain the topic in three short paragraphs."
 
-C. Consistency:
-Did the AI follow the instructions across all five queries?
+BULLET POINTS:
+"Present the main ideas as bullet points."
 
-D. Relevance:
-Did the response answer the actual question without unnecessary information?
+TABLE:
+"Compare the advantages and disadvantages in a table."
 
-E. Format Compliance:
-Did the AI follow the requested structure and style?
+JSON:
+"Return a valid JSON object containing the keys 'name', 'description' and 'category'."
 
-Use a score from 1 to 5 for each criterion.
+STEP-BY-STEP:
+"Explain the process in numbered steps."
 
-1 = Very Poor
-2 = Poor
-3 = Average
-4 = Good
-5 = Excellent
+Why does this matter?
 
-Record the results:
+AI products often need consistent outputs. For example, an application may expect structured data rather than a long paragraph.
 
-SYSTEM PROMPT A
-Clarity: ___ / 5
-Accuracy: ___ / 5
-Consistency: ___ / 5
-Relevance: ___ / 5
-Format Compliance: ___ / 5
-Total: ___ / 25
-
-SYSTEM PROMPT B
-Clarity: ___ / 5
-Accuracy: ___ / 5
-Consistency: ___ / 5
-Relevance: ___ / 5
-Format Compliance: ___ / 5
-Total: ___ / 25
-
-SYSTEM PROMPT C
-Clarity: ___ / 5
-Accuracy: ___ / 5
-Consistency: ___ / 5
-Relevance: ___ / 5
-Format Compliance: ___ / 5
-Total: ___ / 25
-
-Compare the scores and read the actual answers before deciding which prompt performed best. A higher score is useful evidence for this experiment, not proof that the prompt will be best for every task.
+For machine-readable formats such as JSON, the application should validate the output instead of assuming the model always follows the requested format correctly.
 
 
-==================================================
-PART 3: BUILD / APPLY — 35 MINUTES
-==================================================
+8. A COMPLETE SYSTEM PROMPT
 
-OBJECTIVE:
-Design a reusable system prompt that produces consistent responses in a specific target style.
+Here is an example combining persona, tone, guardrails and output format.
 
-PROJECT:
-Build a system prompt for an AI assistant that teaches programming to beginners.
+SYSTEM PROMPT:
 
-REQUIREMENTS:
+"You are a beginner-friendly JavaScript tutor.
 
-1. Role:
-   The AI must act as a beginner-friendly programming tutor.
+ROLE:
+Help learners understand JavaScript concepts and solve programming problems.
 
-2. Audience:
-   The target audience is students with little or no coding experience.
+PERSONA:
+Act as a patient and practical programming teacher.
 
-3. Tone:
-   The communication style must be simple, patient, direct, and practical.
+TONE:
+Use simple English and explain technical terms when they first appear.
 
-4. Explanation Style:
-   Explain concepts step by step and define unfamiliar terms.
+TEACHING RULES:
+1. Start with a short definition.
+2. Explain the concept in simple language.
+3. Give a practical code example when appropriate.
+4. Explain how the example works.
+5. Mention common mistakes when relevant.
 
-5. Examples:
-   Include working code examples when appropriate.
-
-6. Code Explanation:
-   Explain what the code does and why it works.
-
-7. Error Handling:
-   When debugging, identify the likely problem, explain the cause, and suggest a correction.
-
-8. Accuracy:
-   Do not invent programming features or claim untested code has been executed.
-
-9. Formatting:
-   Use headings, short paragraphs, and code blocks.
-
-10. Limitations:
-    Ask for missing essential details when a reliable answer depends on them.
-
-FINAL SYSTEM PROMPT:
-
-You are a beginner-friendly programming tutor who teaches students with little or no coding experience.
-
-Your goal is to help learners understand programming concepts and apply them independently.
-
-COMMUNICATION STYLE:
-- Use simple, clear English.
-- Be patient, direct, and practical.
-- Define unfamiliar technical terms.
-- Avoid unnecessary jargon and overly long explanations.
-
-TEACHING METHOD:
-- Explain concepts step by step.
-- Start with the basic idea before introducing advanced details.
-- Use real-world analogies when they improve understanding.
-- Provide practical examples relevant to the topic.
-
-CODE EXAMPLES:
-- Use readable, properly formatted code.
-- Explain important lines and describe what the code does.
-- Point out common mistakes when relevant.
-- Do not claim that code was executed or tested unless it actually was.
-
-DEBUGGING:
-- Identify the likely cause of the problem.
-- Explain why the problem occurs.
-- Provide a corrected example when sufficient information is available.
-- Ask for the relevant code or error message when necessary.
-
-ACCURACY AND RELIABILITY:
-- Do not invent technical facts.
-- Distinguish assumptions from confirmed information.
-- Explain uncertainty when a solution depends on missing details.
-- Prefer correct, understandable explanations over unnecessary complexity.
+GUARDRAILS:
+1. Do not invent programming facts.
+2. If the question is unclear, ask for clarification.
+3. If you are uncertain, acknowledge it.
+4. Never claim that code has been tested unless it actually has been tested.
 
 OUTPUT FORMAT:
-- Use headings for major concepts.
-- Use numbered steps for procedures.
-- Use code blocks for programming examples.
-- End with a short summary when it helps reinforce learning.
+Use these sections when appropriate:
+Definition
+Explanation
+Example
+How It Works
+Common Mistakes"
 
-ADAPTATION:
-Adjust the level of explanation to the user's question and demonstrated understanding. Keep simple answers concise and provide more detail when the user requests it.
-
-Use these instructions consistently while answering programming questions.
-
-
-BUILD TESTS:
-
-Test 1:
-Explain JavaScript variables to a complete beginner.
-
-Test 2:
-Explain the difference between let, const, and var.
-
-Test 3:
-Write a simple JavaScript function that adds two numbers and explain it.
-
-Test 4:
-Explain why a JavaScript TypeError might occur and how to investigate it.
-
-Test 5:
-Explain the DOM and show how JavaScript can change the text of an HTML element.
-
-CHECKLIST:
-
-[ ] The answers use simple English.
-[ ] The AI explains unfamiliar terminology.
-[ ] Code examples are relevant and readable.
-[ ] The AI follows the requested response style.
-[ ] The AI acknowledges uncertainty when appropriate.
-[ ] The answers are consistent without becoming unnecessarily repetitive.
-[ ] The explanations help a beginner understand the underlying concept.
+This system prompt defines how the AI should teach, communicate, handle uncertainty and structure its answers.
 
 
-==================================================
-PART 4: REVIEW & REFLECT — 25 MINUTES
-==================================================
+9. HOW TO WRITE A GOOD SYSTEM PROMPT
 
-1. WHAT DID I LEARN?
+A useful system prompt generally contains the following elements:
 
-Write a short summary of what you learned about system prompts, user prompts, role-playing, and response consistency.
+1. ROLE
+What is the AI supposed to do?
 
-My Notes:
+2. OBJECTIVE
+What outcome should it help the user achieve?
 
-__________________________________________________
+3. CONTEXT
+What background information does it need?
 
-__________________________________________________
+4. PERSONA
+What role or approach should it adopt?
 
-__________________________________________________
+5. TONE
+How should it communicate?
 
+6. RULES
+What should it do or avoid?
 
-2. HOW MUCH DOES THE SYSTEM PROMPT MATTER?
+7. OUTPUT FORMAT
+How should the answer be structured?
 
-Questions to consider:
+8. UNCERTAINTY HANDLING
+What should it do when information is missing or uncertain?
 
-- Did the system prompt change the tone of the answers?
-- Did it change the response structure?
-- Did it affect the level of detail?
-- Did it improve consistency across multiple queries?
-- Did it prevent factual errors?
-- Were the results different when the user prompt was more specific?
+Not every prompt needs all eight elements. Simple tasks may require only a few clear instructions.
 
-Key Insight:
-
-System prompts can strongly influence the behavior and format of AI responses, especially in repeated workflows. However, they do not guarantee correctness. The task, quality of the user prompt, model capabilities, and available context also influence the result.
-
-
-3. WHAT HAPPENS WHEN THE SYSTEM PROMPT IS VAGUE?
-
-Example:
-
-System Prompt:
-You are a helpful assistant.
-
-User Prompt:
-Explain machine learning.
-
-This leaves many details unspecified, such as the target audience, preferred depth, tone, and output format. The model must choose these based on its general behavior and available context.
-
-A more specific system prompt can reduce ambiguity and improve consistency.
+A common mistake is making prompts unnecessarily long. Clear, relevant and testable instructions are usually more useful than a large collection of vague rules.
 
 
-4. CAN A BETTER USER PROMPT COMPENSATE FOR A WEAK SYSTEM PROMPT?
+10. PRACTICAL EXERCISE: COMPARE THREE SYSTEM PROMPTS
 
-Often, yes.
+TASK:
+Ask an AI the same question using three different system prompts.
 
-A detailed user prompt can specify the audience, format, examples, tone, and expected result for an individual task.
+User question:
+"How can I improve my website?"
 
-However, a well-designed system prompt is useful when the same behavior needs to be maintained across many different requests.
+PROMPT A: GENERAL ASSISTANT
 
-For example, a customer support assistant may receive thousands of different questions. A reusable system prompt can establish
+"You are a helpful assistant. Answer clearly and directly."
+
+PROMPT B: WEB DEVELOPMENT EXPERT
+
+"You are a web development assistant. Focus on website speed, usability, accessibility, responsive design and technical quality. Give practical recommendations."
+
+PROMPT C: BUSINESS-FOCUSED WEBSITE CONSULTANT
+
+"You are a website consultant who focuses on helping businesses improve their online presence. Prioritise customer experience, trust, clear service information and conversions. Give practical recommendations in simple English."
+
+Compare the responses:
+
+- Which response is most technical?
+- Which focuses most on business outcomes?
+- Which gives the most useful recommendations for your specific goal?
+- Did any response make unsupported assumptions?
+- What additional instructions could improve the results?
+
+The purpose is to observe how instructions affect the AI's approach and output.
+
+
+11. TESTING AND IMPROVING SYSTEM PROMPTS
+
+Writing a prompt is only the beginning. It must also be tested.
+
+A basic testing process:
+
+STEP 1:
+Define the task and the expected result.
+
+STEP 2:
+Write a system prompt with clear instructions.
+
+STEP 3:
+Test it with several different user questions.
+
+STEP 4:
+Test difficult cases, such as missing information, ambiguous requests and conflicting instructions.
+
+STEP 5:
+Compare the responses against your requirements.
+
+STEP 6:
+Improve the prompt and test it again.
+
+Example evaluation criteria:
+
+- Accuracy: Is the information correct?
+- Relevance: Does the response answer the question?
+- Clarity: Is it easy to understand?
+- Consistency: Does the AI follow the instructions across different inputs?
+- Format: Does the output follow the requested structure?
+- Safety: Does the system handle risky requests appropriately?
+
+A prompt that works for one example may fail on another. Test multiple cases before using it in a real product.
+
+
+12. IMPORTANT LIMITATIONS
+
+Remember these principles:
+
+1. A system prompt guides behaviour; it does not retrain the model by itself.
+
+2. A persona does not automatically provide new knowledge or real-world expertise.
+
+3. A confident answer is not necessarily a correct answer.
+
+4. Guardrails reduce certain risks but cannot guarantee perfect compliance.
+
+5. Instructions can conflict. For example, "Always answer in one sentence" conflicts with "Explain every step in detail" for a complex task.
+
+6. Testing should include normal requests, unusual inputs and edge cases.
+
+7. In real applications, important requirements should also be enforced through code, permissions, validation and other appropriate controls.
+
+
+13. FINAL SUMMARY
+
+SYSTEM PROMPT:
+Defines the instructions that guide the AI's behaviour.
+
+USER PROMPT:
+Specifies the user's particular request.
+
+PERSONA:
+Defines the role or approach the AI is instructed to adopt.
+
+TONE:
+Defines how the AI communicates.
+
+GUARDRAILS:
+Set boundaries and requirements for model behaviour.
+
+OUTPUT FORMATTING:
+Defines how the answer should be organised.
+
+PROMPT EVALUATION:
+Tests whether the instructions produce reliable and useful results.
+
+THE KEY IDEA:
+
+A good system prompt does not simply tell an AI what it is. It clearly explains what the AI should do, how it should respond, which rules it should follow and what a successful answer looks like.
+
+The most effective way to learn system prompts is to write them, test them on real examples, evaluate the results and improve them.
