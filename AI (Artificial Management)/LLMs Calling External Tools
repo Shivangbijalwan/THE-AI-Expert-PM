@@ -1,0 +1,94 @@
+# LLMs Calling External Tools
+
+## 1. What Does It Mean?
+
+LLMs (Large Language Models) can call external tools to perform tasks that go beyond generating text. Instead of relying only on their training data, they can use tools such as web search, calculators, databases, APIs, and code execution environments.
+
+**Example:** If you ask an LLM, "What is the current weather in Dehradun?", it can call a weather API, retrieve the latest weather information, and explain the result to you.
+
+## 2. How Does It Work?
+
+The process generally follows these steps:
+
+1. **User Request:** The user asks a question or gives a task.
+2. **Tool Selection:** The LLM determines whether an external tool is needed.
+3. **Tool Call:** The LLM generates a request containing the tool name and required arguments.
+4. **Tool Execution:** The external tool performs the task and returns a result.
+5. **Response Generation:** The LLM interprets the result and provides an answer to the user.
+
+**Example:**
+
+User: "Calculate the total cost of 5 products costing ₹200 each."
+
+- Tool: Calculator
+- Input: 5 × 200
+- Output: ₹1,000
+- Final response: "The total cost is ₹1,000."
+
+## 3. Why Does It Matter?
+
+### A. Grounding
+
+Grounding means connecting an LLM's response to reliable information, retrieved data, or actual tool results rather than relying entirely on its internal knowledge.
+
+**Example:** An AI assistant can search an official university website to answer a question about admission requirements.
+
+**Why it matters:** Grounding can improve factual accuracy and reduce unsupported answers, although it does not guarantee correctness.
+
+### B. Fresh Data
+
+An LLM's training data may not contain the latest information. External tools allow it to retrieve up-to-date information when needed.
+
+Examples include:
+- Current weather and news.
+- Latest product prices.
+- Live sports scores.
+- Current stock prices.
+- Updated information from websites and databases.
+
+**Why it matters:** Tools help an LLM answer questions that depend on changing information.
+
+### C. API Specifications
+
+An API (Application Programming Interface) allows different software systems to communicate with each other.
+
+An API specification defines how a tool or service must be used, including:
+- Available endpoints or operations.
+- Required parameters and data types.
+- Authentication requirements.
+- Expected responses.
+- Possible errors and limitations.
+
+**Example:** A payment API might require an order ID, an amount, and authentication credentials before processing a payment.
+
+The LLM must follow the API's specifications when constructing a tool call. The application should also validate the request and enforce security permissions.
+
+**Why it matters:** Correct API usage allows an LLM-powered application to interact with external services reliably.
+
+## 4. Common Examples of External Tools
+
+| Tool | What It Does |
+|---|---|
+| Web Search | Retrieves information from websites. |
+| Calculator | Performs mathematical calculations. |
+| Database | Reads or updates stored information. |
+| Weather API | Retrieves weather data. |
+| Payment API | Supports payment-related operations. |
+| Code Execution | Runs code to solve computational tasks. |
+| Email API | Searches, drafts, or sends emails when authorized. |
+
+## 5. Important Limitations
+
+Tool calling does not make an LLM automatically correct.
+
+- Retrieved information can be outdated or inaccurate.
+- An API call can fail.
+- The model can choose the wrong tool or provide incorrect arguments.
+- Some actions require user permission or confirmation.
+- Sensitive operations must have proper authentication, authorization, and validation.
+
+## 6. Key Takeaway
+
+**LLMs provide reasoning and language capabilities, while external tools provide access to information and actions.**
+
+Tool calling is important because it helps AI applications connect their responses to external data, retrieve fresh information, and interact with real software systems through APIs.
