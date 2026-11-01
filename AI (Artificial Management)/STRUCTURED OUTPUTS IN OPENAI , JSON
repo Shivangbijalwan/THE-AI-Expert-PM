@@ -1,0 +1,114 @@
+STRUCTURED OUTPUTS IN OPENAI
+================================
+
+1. WHAT ARE STRUCTURED OUTPUTS?
+
+Structured Outputs force an AI model to generate responses according to a predefined JSON schema.
+
+Traditional LLM responses return conversational text, which can be difficult to parse and integrate into applications.
+
+Benefits:
+- Reliable JSON formatting.
+- Prevents unexpected properties.
+- Restricts values to predefined options.
+- Makes AI integrations more predictable.
+- Simplifies database and API integration.
+
+Note: Structured Outputs ensure structural consistency, not factual accuracy.
+
+2. MULTI-PLATFORM ALTERNATIVES
+
+- OpenAI: Structured Outputs through its API.
+- Anthropic Claude: Similar structured output capabilities.
+- Instructor: Python library providing a unified interface for structured LLM responses.
+- LiteLLM: Provides a unified interface for routing requests across different LLM providers.
+
+3. TWO MAIN USE CASES
+
+A. DATA EXTRACTION
+
+Converting unstructured information into structured data.
+
+Examples:
+- Extracting information from PDFs.
+- Processing legal contracts.
+- Analyzing customer emails.
+- Converting scanned documents into JSON.
+- Storing extracted information in databases.
+
+B. FUNCTION CALLING & AGENTIC AI
+
+Using structured arguments when AI interacts with external tools and functions.
+
+Examples:
+- Submitting proposals.
+- Deleting records.
+- Retrieving information.
+- Calling external APIs.
+
+4. TECHNICAL IMPLEMENTATION
+
+API:
+Use OpenAI's Responses API for modern integrations.
+
+JSON SCHEMA:
+Defines the expected structure, properties, data types, and validation rules of JSON responses.
+
+SCHEMA DEFINITION TOOLS:
+
+- Pydantic: Used with Python for data validation and schema definition.
+- Zod: Used with TypeScript for schema definition, runtime validation, and type inference.
+
+IMPORTANT CONFIGURATIONS:
+
+- strict: true — Enforces adherence to the supported JSON schema.
+- additionalProperties: false — Prevents unexpected object properties.
+- Required fields — All defined object properties must be required in strict mode.
+- Missing values — Handle unavailable information using appropriate schema-supported values such as null or predefined fallback values.
+
+5. TWO IMPLEMENTATION EXAMPLES
+
+DEMO 1: LEGAL CONTRACT EXTRACTION
+
+Extract information such as:
+- Contract title.
+- Effective date.
+- Duration.
+- Parties involved.
+- Usage purpose.
+
+The extracted information is returned as structured JSON using a Zod schema and the Responses API.
+
+DEMO 2: AGENTIC CHATBOT
+
+An AI chatbot manages talk proposals through functions.
+
+Capabilities:
+- Submit proposals.
+- Delete proposals.
+- List proposals.
+
+The model selects tools, generates structured arguments, and processes function results.
+
+Example:
+If a user wants to delete a proposal without providing its ID, the AI can first list proposals and then use the correct ID for deletion.
+
+6. DEVELOPMENT BEST PRACTICES
+
+Prototype before coding using the OpenAI Playground.
+
+Test:
+- System prompts.
+- JSON schemas.
+- Tool definitions.
+- Different user inputs.
+- Invalid inputs.
+- Model responses.
+
+This helps identify problems early and reduces unnecessary development work.
+
+7. KEY TAKEAWAY
+
+Structured Outputs connect AI-generated information with predictable data structures.
+
+They are essential when building reliable AI applications that interact with databases, APIs, forms, external tools, and automated workflows.
