@@ -1,0 +1,139 @@
+PRODUCT REQUIREMENTS DOCUMENT (PRD)
+====================================
+
+1. WHAT IS A PRD?
+-----------------
+A Product Requirements Document (PRD) is a document that explains what a product or feature should do and what problem it should solve.
+
+It acts as a compass and a single source of truth for the entire product team.
+
+A PRD defines:
+- Who the product is for.
+- What problem it solves.
+- What features are required.
+- How the product should behave.
+- What assumptions and dependencies exist.
+
+2. WHEN SHOULD YOU CREATE A PRD?
+--------------------------------
+A PRD should be created after market and user research but before developers begin development.
+
+Why?
+- To clarify the product requirements.
+- To define the project scope.
+- To avoid confusion during development.
+- To identify risks early.
+
+IMPORTANT:
+Anything not documented in the agreed PRD is generally considered outside the release scope.
+
+3. CORE STRUCTURE OF A PRD
+--------------------------
+Requirements should be written from the end-user's perspective.
+
+A good PRD should answer four questions:
+
+WHO: Who is the user?
+WHAT: What does the user want to do?
+HOW: How should the product respond?
+WHEN: When should a particular action or response happen?
+
+Example:
+When a user enters an incorrect password and clicks Login, the system should display an error message.
+
+4. FUNCTIONAL VS NON-FUNCTIONAL REQUIREMENTS
+---------------------------------------------
+
+FUNCTIONAL REQUIREMENTS:
+Describe WHAT the product should do.
+
+Examples:
+- Users can create accounts.
+- Users can log in.
+- Users can reset passwords.
+- The system displays error messages when login details are incorrect.
+
+NON-FUNCTIONAL REQUIREMENTS:
+Describe HOW WELL the product should operate.
+
+Examples:
+- Pages should load within a specified time.
+- Login requests should have a defined timeout.
+- User data should remain secure.
+- The product should work on supported devices.
+
+Remember:
+Functional = What the system does.
+Non-functional = How the system operates.
+
+5. PRIORITIZATION
+-----------------
+Features are categorized according to their importance.
+
+P0 — MUST-HAVE:
+Essential features required for the product's main purpose.
+
+P1 — NICE-TO-HAVE:
+Useful features that improve the experience but are not essential for the initial release.
+
+Example (Shopping App):
+
+P0:
+- View products.
+- Add products to cart.
+- Place orders.
+
+P1:
+- Save products to wishlist.
+- Additional customization options.
+
+6. TEAM REVIEW AND APPROVAL
+----------------------------
+Before development begins, arrange review meetings with:
+- Product Managers
+- Designers
+- Developers
+- Testers
+
+The purpose of these meetings is to:
+- Identify missing requirements.
+- Find technical limitations.
+- Discuss possible risks.
+- Review edge cases.
+- Confirm the project scope.
+
+Once development begins, lock the PRD as the agreed baseline.
+
+Any new changes should be documented, reviewed, and approved.
+
+7. POST-LAUNCH REVIEW AND METRICS
+---------------------------------
+After launching the feature, measure whether it actually solves the user's problem.
+
+Use KPIs (Key Performance Indicators) and user engagement metrics.
+
+Examples:
+- Number of users using the feature.
+- Feature adoption rate.
+- Task completion rate.
+- Error rate.
+- User retention.
+- User feedback and satisfaction.
+
+Review these metrics to identify improvements for future releases.
+
+8. QUICK SUMMARY
+----------------
+1. A PRD acts as the single source of truth for a product team.
+2. Create it after research and before development.
+3. Define requirements from the user's perspective.
+4. Functional requirements explain WHAT the product does.
+5. Non-functional requirements explain HOW WELL it operates.
+6. P0 represents must-have features.
+7. P1 represents nice-to-have features.
+8. Review the PRD with the team before development.
+9. Lock the PRD once development begins.
+10. Track KPIs and user engagement after launch.
+
+KEY TAKEAWAY:
+A good PRD does not just list features. It clearly defines the user problem, expected product behavior, development scope, priorities, and success measurements.
